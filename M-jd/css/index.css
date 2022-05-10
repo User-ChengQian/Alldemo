@@ -1,0 +1,74 @@
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 45px;
+  line-height: 45px;
+  background-color: gray;
+  display: flex;
+  overflow: auto;
+}
+.header p {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 0 10px;
+}
+.header p:hover {
+  color: skyblue;
+}
+.main {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+.main .Laside {
+  width: 80px;
+  height: 600px;
+  background-color: #f7f7f7;
+  overflow: auto;
+}
+.main .Laside ul {
+  width: 80px;
+}
+.main .Laside li {
+  color: #000000;
+  height: 45px;
+  line-height: 45px;
+  font-size: 13px;
+  text-align: center;
+}
+.main .Rmain {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.main .Rmain .box {
+  height: 100px;
+  width: 33.3%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .Rmain .box img {
+  width: 60px;
+  height: 49px;
+}
+.footer {
+  height: 45px;
+  background-color: gray;
+}

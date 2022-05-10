@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .header,
+    .header .Rbox {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      width: 100%;
+    }
+
+    .Lbox {
+      width: 48%;
+    }
+
+    .Rbox {
+      width: 48%;
+    }
+
+    .Rbox img {
+      width: 48%;
+    }
+
+
+
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .main img {
+      width: 20%;
+      margin: 5px;
+      box-shadow: 5px 2px 5px rgba(0, 0, 0, .7);
+    }
+
+    @media screen and (max-width:775px) {
+      .Lbox {
+        width: 100%;
+      }
+
+      .Rbox {
+        width: 100%;
+      }
+
+      .main img {
+        width: 24%;
+      }
+
+    }
+
+    @media screen and (max-width:500px) {
+
+
+      .main img {
+        width: 33%;
+      }
+
+    }
+
+    @media screen and (max-width:300px) {
+      .main img {
+        width: 43%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="Lbox">
+      <img src="./img/swiper1.jpeg" alt="">
+    </div>
+    <div class="Rbox">
+      <img src="./img/ad1.png" alt="">
+      <img src="./img/ad2.png" alt="">
+    </div>
+  </div>
+  <div class="main">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img1.jpg" alt="">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 44px;
+  font-size: 12px;
+  background-color: #1dc854;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header span {
+  text-align: center;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  color: #fdfdff;
+  background-color: #62d786;
+  border-radius: 10px 0 0 10px;
+}
+.header span:nth-child(2) {
+  color: #97ecaf;
+  background-color: #3acf68;
+  border-radius: 0 10px 10px 0;
+}
+.section {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  background-color: #ffffff;
+}
+.section .nav {
+  position: sticky;
+  top: 0;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ffffff;
+}
+.section .nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section .nav ul li {
+  width: 100%;
+  text-align: center;
+  color: #656565;
+  float: left;
+  list-style: none;
+  font-size: 13px;
+}
+.section .nav ul li:hover {
+  color: #59bd7c;
+  border-bottom: 2px solid #03c243;
+}
+.section .main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section .main .box {
+  width: 49%;
+  height: 186px;
+  float: left;
+  border: 1px solid #e0e5e1;
+  margin-top: 4px;
+}
+.section .main .box img {
+  vertical-align: middle;
+  height: 156px;
+}
+.section .main .box p {
+  width: 100%;
+  font-size: 12px;
+  margin: 10px 0 0 10px;
+  color: #323232;
+}
+.footer {
+  height: 43px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .box:nth-child(3) {
+  position: relative;
+}
+.footer .box:nth-child(3) span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -6px;
+  left: -28px;
+  font-size: 26px;
+  border: 1px solid gray;
+}
+.footer .box {
+  float: left;
+  text-align: center;
+}
+.footer .box .iconfont {
+  font-size: 16px;
+}
+.footer .box p {
+  font-size: 12px;
+}
+.footer .box:hover {
+  color: #07c03e;
+  cursor: pointer;
+}
