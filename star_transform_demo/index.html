@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 350px;
+      height: 400px;
+      margin: 0 auto;
+      border: 2px solid red;
+      position: relative;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      transition: all 1s;
+
+    }
+
+    span {
+      opacity: 0;
+      position: absolute;
+      font-size: 30px;
+      font-weight: bold;
+      top: 100px;
+      left: 64px;
+      color: #fff;
+      transform: translate(0, -90px);
+      transition: all 2s;
+
+    }
+
+    p {
+      opacity: 0;
+      position: absolute;
+      top: 120px;
+      left: 100px;
+      transform: translate(0, 50px);
+      transition: all 0.2s;
+
+    }
+
+    .box:hover p,
+    .box:hover span {
+      opacity: 1;
+      transform: translate(0, 0);
+
+    }
+
+    .box:hover img {
+      transform: translate(0, -30px);
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="./3.png" alt="">
+    <span>title</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus! Similique iure corrupti inventore
+      tenetur obcaecati repellendus sint excepturi facilis, ex magnam? Omnis velit at hic odio dicta voluptates
+      repudiandae.</p>
+  </div>
+</body>
+
+</html>
